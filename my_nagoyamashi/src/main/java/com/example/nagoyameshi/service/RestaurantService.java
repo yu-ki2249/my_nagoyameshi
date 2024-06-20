@@ -17,7 +17,7 @@ import com.example.nagoyameshi.entity.Restaurant;
 import com.example.nagoyameshi.form.RestaurantEditForm;
 import com.example.nagoyameshi.form.RestaurantRegisterForm;
 import com.example.nagoyameshi.repository.RestaurantRepository;
-import com.stripe.service.ReviewService;
+
 
 @Service
 public class RestaurantService {
@@ -30,10 +30,11 @@ public class RestaurantService {
     
     public RestaurantService(RestaurantRepository restaurantRepository,
                              RegularHolidayRestaurantService regularHolidayRestaurantService,
-                             CategoryRestaurantService categoryRestaurantService,
+                             CategoryRestaurantService categoryRestaurantService
 //                             FavoriteService favoriteService,
 //                             ReservationService reservationService,
-                             ReviewService reviewService) 
+//                             ReviewService reviewService
+                             ) 
     {
         this.restaurantRepository = restaurantRepository;        
         this.regularHolidayRestaurantService = regularHolidayRestaurantService;  
